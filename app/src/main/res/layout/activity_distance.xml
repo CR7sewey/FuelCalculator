@@ -2,11 +2,11 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/car"
+    android:id="@+id/distance"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".CarConsActivity">
+    tools:context=".DistanceActivity">
 
 
 
@@ -29,7 +29,7 @@
                 android:layout_height="150dp"
                 android:layout_marginTop="100dp"
                 android:layout_marginBottom="75dp"
-                android:src="@drawable/car_svgrepo_com"
+                android:src="@drawable/distance"
                 />
         </LinearLayout>
 
@@ -37,7 +37,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Car Consumption"
+            android:text="Distance"
             android:textSize="32dp"
             android:textStyle="bold"
             android:textColor="@color/blue"
@@ -53,7 +53,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Step 2 of 3"
+            android:text="Step 3 of 3"
             android:textSize="16dp"
             android:textColor="@color/black"
             android:layout_marginStart="32dp"
@@ -77,15 +77,15 @@
             app:hintEnabled="false"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/next3">
+            app:layout_constraintTop_toBottomOf="@id/next4">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/priceCar"
+                android:id="@+id/distanceCar"
                 android:background="@drawable/buttondrawable"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Ex.: 5.50 (km/l)"
-                android:maxLength="6"
+                android:hint="Ex.: 100 (km)"
+                android:maxLength="8"
                 android:inputType="numberDecimal" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -93,7 +93,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/next3"
+        android:id="@+id/next4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="18dp"
