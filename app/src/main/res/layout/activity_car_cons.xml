@@ -2,11 +2,11 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/car"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".MainActivity">
+    tools:context=".CarConsActivity">
 
 
 
@@ -29,8 +29,7 @@
                 android:layout_height="150dp"
                 android:layout_marginTop="100dp"
                 android:layout_marginBottom="75dp"
-                android:src="@drawable/fuel_pump_svgrepo_com"
-
+                android:src="@drawable/car_svgrepo_com"
                 />
         </LinearLayout>
 
@@ -38,12 +37,12 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Fuel calculator"
-            android:textSize="46dp"
+            android:text="Car Consumption"
+            android:textSize="32dp"
             android:textStyle="bold"
             android:textColor="@color/blue"
-            android:gravity="center"
             android:layout_marginTop="75sp"
+            android:layout_marginStart="32sp"
             app:layout_constraintTop_toTopOf="parent"
             android:shadowColor="#80000000"
             android:shadowDx="4"
@@ -54,12 +53,11 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="No idea how much you're going to spend on your trip? You're in the right place!"
-            android:textSize="20dp"
-            android:textColor="@color/blue"
-            android:gravity="center"
-            android:layout_marginStart="25dp"
-            android:layout_marginEnd="25dp"
+            android:text="Step 2 of 3"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
             app:layout_constraintTop_toTopOf="parent"
             android:shadowColor="#80000000"
             android:shadowDx="4"
@@ -68,14 +66,38 @@
 
             />
 
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="20dp"
+
+            app:hintEnabled="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/next2">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/priceCar"
+                android:background="@drawable/buttondrawable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ex.: 5.50 (km/l)"
+                android:maxLength="6"
+                android:inputType="numberDecimal" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
     </LinearLayout>
 
     <Button
-        android:id="@+id/start"
+        android:id="@+id/next3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="18dp"
-        android:text="Start"
+        android:text="Next"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
