@@ -8,6 +8,8 @@
     android:background="@drawable/gradiente"
     tools:context=".MainActivity">
 
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -15,15 +17,23 @@
 
         >
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="150dp"
+            android:src="@drawable/fuel_pump_svgrepo_com"
+
+            />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Fuel calculator"
             android:textSize="38dp"
             android:textStyle="bold"
-            android:textColor="@color/white"
+            android:textColor="@color/blue"
             android:gravity="center"
-            android:layout_marginTop="400sp"
+            android:layout_marginTop="100sp"
             app:layout_constraintTop_toTopOf="parent"
             android:shadowColor="#80000000"
             android:shadowDx="4"
@@ -36,7 +46,7 @@
             android:layout_height="wrap_content"
             android:text="No idea how much you're going to spend on your trip? You're in the right place!"
             android:textSize="20dp"
-            android:textColor="@color/white"
+            android:textColor="@color/blue"
             android:gravity="center"
             android:layout_marginStart="25dp"
             android:layout_marginEnd="25dp"
@@ -47,10 +57,6 @@
             android:shadowRadius="2"
 
             />
-
-
-
-
 
     </LinearLayout>
 
