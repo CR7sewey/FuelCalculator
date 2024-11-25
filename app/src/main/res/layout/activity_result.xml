@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ResultActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradiente"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backgroundwhite"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="75dp"
+                android:gravity="center"
+                android:textColor="@color/blue"
+                android:textSize="100sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="0.00" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45sp"
+            android:gravity="center"
+            android:shadowColor="#80000000"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="2"
+            android:text="Review of Data"
+            android:textColor="@color/blue"
+            android:textSize="32dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/priceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shadowColor="#80000000"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:shadowRadius="2"
+        android:text="Price"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="180sp"
+        android:layout_marginStart="74sp"
+        />
+
+            <TextView
+                android:id="@+id/priceFuel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="0.00"
+                android:textSize="18dp"
+                android:gravity="end"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/priceLabel"
+                android:shadowColor="#80000000"
+                android:shadowDx="4"
+                android:shadowDy="4"
+                android:shadowRadius="2"
+                android:maxLength="4"
+                android:layout_marginTop="180sp"
+                android:layout_marginStart="174sp"
+                android:layout_marginEnd="74sp"
+            />
+
+    <TextView
+        android:id="@+id/consumptionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shadowColor="#80000000"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:shadowRadius="2"
+        android:text="Consumption"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="280sp"
+        android:layout_marginStart="74sp"
+        />
+
+    <TextView
+        android:id="@+id/consumption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="0.00"
+        android:textSize="18dp"
+        android:gravity="end"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/priceLabel"
+        android:shadowColor="#80000000"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:shadowRadius="2"
+        android:maxLength="4"
+        android:layout_marginTop="280sp"
+        android:layout_marginStart="174sp"
+        android:layout_marginEnd="74sp"
+        />
+
+
+    <TextView
+        android:id="@+id/distanceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shadowColor="#80000000"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:shadowRadius="2"
+        android:text="Km"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="380sp"
+        android:layout_marginStart="74sp"
+        />
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="0.00"
+        android:textSize="18dp"
+        android:gravity="end"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/distanceLabel"
+        android:shadowColor="#80000000"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:shadowRadius="2"
+        android:maxLength="8"
+        android:layout_marginTop="380sp"
+        android:layout_marginStart="174sp"
+        android:layout_marginEnd="74sp"
+        />
+
+
+
+
+
+    <Button
+        android:id="@+id/next5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="New Calculation"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="26dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginStart="26dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

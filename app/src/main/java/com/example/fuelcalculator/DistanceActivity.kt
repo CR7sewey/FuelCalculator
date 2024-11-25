@@ -32,7 +32,7 @@ class DistanceActivity : AppCompatActivity() {
                 Snackbar.make(next, "Please, insert a value!", Snackbar.LENGTH_LONG).show()
             }
             else {
-                val explicitIntent = Intent(this, DistanceActivity::class.java)
+                val explicitIntent = Intent(this, ResultActivity::class.java)
                 explicitIntent.putExtra(PRICE_FUEL,priceFuel)
                 explicitIntent.putExtra(PRICE_CAR, priceCar)
                 explicitIntent.putExtra(DISTANCE, distanceStr)
