@@ -84,7 +84,7 @@
                 android:background="@drawable/buttondrawable"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Ex.: 5.50 (km/l)"
+                android:hint="Ex.: 5.50 (l/100km)"
                 android:maxLength="6"
                 android:inputType="numberDecimal" />
 
